@@ -1,15 +1,11 @@
 import type { SidebarNavItem, SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  name: "Live HTML Editor",
+  name: "HTML Code Editor – IngeniousClan",
   description:
     "LiveHTMLEditor is a free, browser-based HTML editor that provides real-time syntax highlighting and instant preview. No setup, no installs—start coding now!",
   url: "https://astro-nomy.vercel.app",
   ogImage: "https://astro-nomy.vercel.app/og.jpg",
-  links: {
-    twitter: "https://twitter.com/miickasmt",
-    github: "https://github.com/mickasmt/astro-nomy",
-  },
 };
 
 export const footerLinks: SidebarNavItem[] = [

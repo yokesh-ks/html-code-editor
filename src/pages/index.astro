@@ -1,29 +1,14 @@
 ---
-import PageHeader from "@/components/page-header.astro";
 import MainLayout from "@/layouts/main-layout.astro";
 import { HTMLEditor } from "@/components/html-editor/html-editor";
 ---
 
-<MainLayout 
-  title="LiveHTMLEditor - Real-time HTML Code Editor" 
+<MainLayout
+  title="HTML Code Editor – IngeniousClan"
   description="A powerful HTML code editor with live preview, syntax highlighting, and tag insertion tools"
   mainClass="flex flex-col h-screen"
 >
-  <div class="container mx-auto px-4 py-6 flex flex-col h-full">    
-    <div class="flex-1 rounded-xl overflow-hidden bg-gradient-to-br from-slate-900/90 via-indigo-950/80 to-slate-900/90 backdrop-blur-sm shadow-2xl border border-indigo-500/30">
-      <HTMLEditor client:load className="h-full" />
-    </div>
-    
-    <div class="mt-4 text-sm text-indigo-200 bg-gradient-to-r from-indigo-950/50 to-purple-950/50 p-3 rounded-lg shadow-md border border-indigo-500/20">
-      <p>
-        <strong class="text-indigo-300">Tips:</strong> 
-        Use the tag dropdown to insert HTML elements, 
-        the close tag button follows LIFO (Last In, First Out) order, 
-        and the preview updates in real-time as you type.
-        Toggle syntax highlighting for better code readability.
-      </p>
-    </div>
-  </div>
+  <HTMLEditor client:only="react" className="h-full w-full" />
 </MainLayout>
 
 <style>
