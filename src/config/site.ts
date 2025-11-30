@@ -4,8 +4,8 @@ export const siteConfig: SiteConfig = {
   name: "HTML Code Editor – IngeniousClan",
   description:
     "LiveHTMLEditor is a free, browser-based HTML editor that provides real-time syntax highlighting and instant preview. No setup, no installs—start coding now!",
-  url: "https://astro-nomy.vercel.app",
-  ogImage: "https://astro-nomy.vercel.app/og.jpg",
+  url: "https://html-code-editor.ingeniousclan.com/",
+  ogImage: "https://html-code-editor.ingeniousclan.com//og.jpg",
 };
 
 export const footerLinks: SidebarNavItem[] = [

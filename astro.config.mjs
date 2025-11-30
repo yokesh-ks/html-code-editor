@@ -1,13 +1,13 @@
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel/static";
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-nomy.vercel.app",
+  site: "https://html-code-editor.ingeniousclan.com/",
   integrations: [
     icon(),
     sitemap(),
@@ -16,8 +16,5 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
-  output: "hybrid",
-  adapter: vercel({
-    analytics: true,
-  }),
+  adapter: vercel({})
 });
